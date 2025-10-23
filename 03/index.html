@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Variables</title>
+  </head>
+  <body>
+    <script>
+      // declaration and assignment of Variables
+      let a; // declaration
+      a = 10; // assignment
+
+      var Variable = 10;
+      var Variables = 20; // now it's value change to 20
+
+      const another = 20; // also we cannot decration and assigning value with separate
+      // const another = 30; // gives an error (identifier is already been declared)
+
+    //   const counter = 20;
+    //   counter++; // assignment to constant variable
+
+      // best way to write a constant variables
+      const TAX_RATE = 0.08;
+
+      // Object
+
+      const obj = {
+        prop1: 20,
+        prop2: 40,
+      };
+    //   console.log(obj.prop1); // 20 dot notation
+    //   console.log(obj["prop1"]); // 20 bracket notation
+
+      const obj2 = {
+        layer1: {
+          layer2: {
+            layer3: {
+              targetValue: 30,
+            },
+          },
+        },
+      };
+    //   console.log(obj2.layer1.layer2.layer3.targetValue); // 30
+
+      // challenge 1 :
+      // 1. create a boolean variable called `myBoolean` and set it to `true`.
+      const myBoolean = true;
+      // 2. Crreate a string variable called `myString` and set it to `hello world`.
+      const myString = `hello world`;
+      // 3. Create a number variable called `firstNumber` and set it to `20`.
+      const firstNumber = 20;
+      // 4. Create another number variable called `secondNumber` and set it to equal to `40`.
+      let secondNumber = 40;
+      // 5. Re-assign `secondNumber` and set it equal to `80`.
+      secondNumber = 80;
+      // 6. Create an array called `myArray` and put `myBoolean` at index 0, and `myString` at index 1.
+      const myArray = [myBoolean, myString];
+      // 7. Create an object called `myObject` and assign `myArray` to property called `firstProperty`, and the sum of `firstNumber` and `secondNumber` to a property called `sumProperty` (hint: we didt cover how to do this here.)
+      const myObject = {
+        firstProperty: myArray,
+        sumProperty: firstNumber + secondNumber,
+      };
+      // 8. Print myobject to the console
+      console.log(myObject);
+      // 9. Print the sumProperty of myObject to the console
+      console.log(myObject.sumProperty);
+      // 10. Print the value at index 1 of firstProperty
+      console.log(myObject.firstProperty[1]);
+
+
+    //   challenge 2 
+    // There are three things wrong with this code. Find them and explain why they are wrong. 
+
+    // const some Number = 20;
+    // someNumber = 50
+// corrected code here
+    let someNumber = 20;
+    someNumber = 50;
+    
+
+    // challenge 3 
+    // What does resultVariable equal? what data type is it? 
+    // We haven't covered everything here, but research this for a bit and see what you can find.
+
+    // const variable1 = 20;
+    // const variable2 = "40";
+
+    // const resultVariable = variable1 + variable2;
+
+    // console.log(resultVariable);
+// correct answer 
+    // resultVariable => 2040; 
+
+    // challenge 4 
+    // Why is this code invalid? Edit this until it is valid. 
+    // const objectVariable = {
+    // property1: 'i am property 1';
+    // property2: 'i am property 2';
+    // property3: [20, 30, 40];
+    // };
+
+    // console.log(objectVariable.property3[2]);
+
+// corrected way 
+    //   const objectVariable = {
+    // property1: 'i am property 1',
+    // property2: 'i am property 2',
+    // property3: [20, 30, 40],
+    // };
+
+    // console.log(objectVariable.property3[2]);  // here we remove semicolon with coma .
+
+    // challenge 5 
+    // Why does this code not work? Edit until it works. 
+    // const myArray2= [20, 30, 40];
+    // console.log(myArray[3]);
+
+// correct way 
+const myArray2 = [20, 30, 40];
+console.log(myArray2[2])
+    </script>
+  </body>
+</html>
