@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change background color</title>
+    <style>
+      div {
+        height: 500px;
+        width: 400px;
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        Click on me for change my color
+    </div>
+    <script>
+      const background_color = document.querySelector("div");
+      function getRandomColor() {
+        const red = Math.floor(Math.random() * 256);
+        const green = Math.floor(Math.random() * 256);
+        const blue = Math.floor(Math.random() * 256);
+        const randomColor = `rgb(${red}, ${green}, ${blue})`;
+        background_color.style.backgroundColor = randomColor;
+        console.log(randomColor);
+      }
+      background_color.onclick = getRandomColor;
+      
+    </script>
+  </body>
+</html>
