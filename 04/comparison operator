@@ -1,1 +1,19 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  </head>
+  <body>
+      <h2>Comparison Operator</h2>
+      == equal operator 
+      === strict equal operator
+      != not equal operator
+      !== strict not equal operator
+      > greater than operator
+      < less than operator
+      >= greater than equal operator
+      <= less than equal operator
 
+    <script>
+    </script>
+  </body>
+  </html>
