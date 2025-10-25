@@ -14,6 +14,21 @@
       <= less than equal operator
 
     <script>
+      let a = 20;
+        let b = 20;
+        let c = "20";
+        let d = 30;
+
+        console.log(a == b);  // true
+        console.log(a === b);  // true
+        console.log(a == c);  // true
+        console.log(a === c);  // false
+        
+        // here triple equal operator checks value and type of values 
+
+        console.log(a != d);  // true 
+        console.log(a != b);  // false 
+        console.log(a !== c);  // true 
     </script>
   </body>
   </html>
