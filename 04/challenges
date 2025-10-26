@@ -1,1 +1,92 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS operators</title>
+</head>
+<body>
+  <h1>JS operators</h1>
+    <script>
+    //    challenge 1 : 
+
+    //    Why doesn't this code work? Try to make it work and guess what the result will be (hint: this is a little bit of a review from last lesson).
+
+    // const numberVariable = 0; 
+    let numberVariable = 0; 
+
+    numberVariable++; // 1
+    numberVariable++; //2
+    numberVariable++; //3
+
+    console.log(numberVariable);  // result = 3
+
+
+    // challenge 2 : 
+
+// Do the following two blocks of code result in the same answer? If not, which one would you recommend using and why?
+
+    const firstNumber = 20;
+    const secondNumber = "20";
+
+    const result = firstNumber === secondNumber;
+    const result2 = firstNumber == secondNumber;
+
+    console.log(result); // false 
+    console.log(result2); // true 
+
+    // challenge 3 : 
+    // What does expression5 evaluate to? How could you write this in a single line of code (for exercise purposes only; you would never want to combine all this in one line)?
+
+    const expression1 = 100 % 50; // 0
+    const expression2 = 100 / 50; // 2
+    const expression3 = expression1 < expression2;  // true
+    const expression4 = expression3 && 300 + 5 === 305; // true
+    const expression5 = !expression4; // false
+
+    console.log(expression5); // false
+    console.log(!((100 % 50) < (100 / 50)) && (300 + 5 === 305)) // false
+
+    // challenge 4 : 
+    // What does result evaluate to? You might want to review the previous lesson for this one
+
+    const myObj = {
+    prop1: "first value",
+    prop2: 20,
+    };
+
+    const myArray = [40, 50, 2];
+
+    const result3 = myObj.prop2 === myArray[0] / myArray[2]; // true
+    console.log(result3);  // true
+    
+    
+    // challenge 5 : 
+    // This one is meant to be a tough challenge. You probably will need to Google this and it might take you a while to complete.
+    // What does result evaluate to?
+
+    const myObj2 = {
+  nestedObject1: {
+    price: 100,
+    quantity: 5,
+  },
+  nestedObject2: {
+    price: 150,
+    quantity: 2,
+  },
+};
+
+const myArray2 = [myObj2.nestedObject1, myObj2.nestedObject2];
+console.log(myArray2);
+// here myArray2 = [{price: 100, quantity: 5}, {price: 150, quantity: 2}]
+
+const result4 =
+  myArray2[0].price * myArray2[0].quantity > myArray2[1].price * myArray2[1].quantity;
+
+console.log(result4); // true 
+
+
+    </script>
+</body>
+</html>
