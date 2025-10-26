@@ -29,6 +29,37 @@
         console.log(a != d);  // true 
         console.log(a != b);  // false 
         console.log(a !== c);  // true 
+
+        // this is expample of ternary operator 
+        const result = 20 === 20 ? "values match" : "values do not match";
+
+        if(20 === 20) {
+            return "values match";
+        } else {
+            return "values do not match";
+        }
+
+        // logical operator 
+        // && || ! 
+
+        let isTrue;
+        if (10 === 10 && 20 === 20){
+            isTrue = "true";
+        } else {
+            isTrue = "false";
+        }
+        // with this operator both side of operator should be true 
+
+        if (10 === 10 || 10 === 13) {
+            isTrue = "true";
+        } else {
+            isTrue = "false";
+        }
+        // either one side of symbol should be true 
+        // ! is known as negation of value 
+
+        // !(10 === 10) ==> false 
+
     </script>
   </body>
   </html>
