@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditionals, functions and loops</title>
+</head>
+<body>
+    <script>
+       
+        const blogPosts = [
+            {
+                title: 'What is JavaScript?',
+                author: 'Zach Gollwitzer',
+                publishDate: 'Dec 20, 2020',
+                content: 'some post content here'
+            },
+            {
+                title: 'How do Arrays work?',
+                author: 'Zach Gollwitzer',
+                publishDate: 'Jan 1, 2021',
+                content: 'some post content here'
+            },
+            {
+                title: 'How long does it take to learn coding?',
+                author: 'Zach Gollwitzer',
+                publishDate: 'Jan 20, 2021',
+                content: 'some post content here'
+            },
+        ]
+        // console.log(blogPosts[0].title)
+
+        for( let i = 0; i < blogPosts.length; i++){
+            const postTitle = blogPosts[i].title;
+            const postAuthor = blogPosts[i].author;
+            const postDate = blogPosts[i].publishDate;
+            const postContent = blogPosts[i].content;
+
+            // here, we would use these variables to do something with each post
+            // I'll just print the values
+
+            console.log(postTitle);
+            console.log(postAuthor);
+            console.log(postDate);
+            console.log(postContent);
+        }
+
+        const arrr = [12, 'asdfas', 'asdfasdf', 3, 5, 65, 'asdf', 'asdfs', 'hkaDH', 'jkahfJA', 'asd',]
+        for (let i = 0; i < arrr.length; i++) {
+            if(typeof arrr[i] === 'string') {
+                console.log(arrr[i]);
+            }
+
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
 
