@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myFunction() {
+        console.log("normal function");
+      }
+      myFunction(); //normal function
+
+      const myAnotherFunc = function () {
+        console.log("another type of writing function");
+      };
+      myAnotherFunc(); //another type of writing function
+
+      const param = function (num1, num2) {
+        sum = num1 + num2;
+        console.log(sum);
+      };
+      param(1, 2); // 3
+      
+      (function immediate() {
+        console.log("immediate invoke function");
+      })(); //immediate invoke function
+    </script>
+  </body>
+</html>
 
